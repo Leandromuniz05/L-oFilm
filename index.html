@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Leo Moura Film | Insulfilm e PPF Premium</title>
+<title>Leo Moura Film | Insulfilm e PPF Premium em Sorocaba</title>
 
 <meta name="description" content="Especialistas em Insulfilm, PPF e proteção automotiva premium em Sorocaba.">
 
@@ -15,6 +16,8 @@
 --black:#0f0f0f;
 --dark:#181818;
 --white:#ffffff;
+--instagram:#E1306C;
+--whatsapp:#25D366;
 }
 
 *{
@@ -53,7 +56,7 @@ padding:18px 0;
 }
 
 .logo{
-font-size:1.6rem;
+font-size:1.7rem;
 font-weight:bold;
 color:var(--gold);
 }
@@ -112,7 +115,7 @@ transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-2px);
+transform:translateY(-3px);
 }
 
 section{
@@ -137,6 +140,11 @@ background:var(--dark);
 padding:30px;
 border-radius:15px;
 text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
@@ -158,9 +166,7 @@ gap:20px;
 position:relative;
 overflow:hidden;
 border-radius:15px;
-background:#222;
 height:320px;
-text-decoration:none;
 }
 
 .portfolio-item img{
@@ -171,7 +177,7 @@ transition:.4s;
 }
 
 .portfolio-item:hover img{
-transform:scale(1.05);
+transform:scale(1.08);
 }
 
 .overlay{
@@ -193,18 +199,16 @@ opacity:1;
 padding:12px 20px;
 border:2px solid var(--gold);
 border-radius:8px;
-color:white;
 font-weight:bold;
 }
 
-.instagram{
+.instagram-link{
 text-align:center;
-margin-top:35px;
+margin-top:30px;
 }
 
-.instagram a{
+.instagram-link a{
 color:var(--gold);
-font-size:1.1rem;
 font-weight:bold;
 text-decoration:none;
 }
@@ -214,7 +218,7 @@ text-align:center;
 }
 
 .endereco{
-margin-bottom:30px;
+margin-bottom:25px;
 font-size:1.1rem;
 }
 
@@ -229,23 +233,18 @@ border-radius:15px;
 text-align:center;
 }
 
-.contato p{
-margin-bottom:15px;
-}
-
 footer{
 background:#000;
 padding:30px;
 text-align:center;
 }
 
-.whatsapp{
+.whatsapp,
+.instagram-float{
 position:fixed;
-bottom:20px;
 right:20px;
 width:65px;
 height:65px;
-background:#25D366;
 border-radius:50%;
 display:flex;
 align-items:center;
@@ -255,6 +254,22 @@ font-size:30px;
 color:white;
 box-shadow:0 0 15px rgba(0,0,0,.4);
 z-index:9999;
+transition:.3s;
+}
+
+.whatsapp{
+bottom:20px;
+background:var(--whatsapp);
+}
+
+.instagram-float{
+bottom:95px;
+background:var(--instagram);
+}
+
+.whatsapp:hover,
+.instagram-float:hover{
+transform:scale(1.1);
 }
 
 @media(max-width:768px){
@@ -278,10 +293,6 @@ padding:100px 0;
 font-size:2rem;
 }
 
-.hero p{
-font-size:1rem;
-}
-
 .cards{
 grid-template-columns:1fr;
 }
@@ -290,6 +301,7 @@ grid-template-columns:1fr;
 
 </style>
 </head>
+
 <body>
 
 <header>
@@ -337,23 +349,17 @@ Solicitar Orçamento
 
 <div class="card">
 <h3>Insulfilm Automotivo</h3>
-<p>
-Redução de calor, proteção UV, privacidade e conforto térmico.
-</p>
+<p>Redução de calor, proteção UV, privacidade e conforto térmico.</p>
 </div>
 
 <div class="card">
 <h3>PPF - Paint Protection Film</h3>
-<p>
-Proteção contra riscos, impactos de pedras e desgaste da pintura.
-</p>
+<p>Proteção contra riscos, impactos e desgaste da pintura.</p>
 </div>
 
 <div class="card">
 <h3>Envelopamento</h3>
-<p>
-Mudança visual e acabamento premium para veículos.
-</p>
+<p>Mudança visual com acabamento premium e alta durabilidade.</p>
 </div>
 
 </div>
@@ -370,56 +376,28 @@ Mudança visual e acabamento premium para veículos.
 
 <div class="portfolio-grid">
 
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/Cd6ZadIOL0Y/">
-<img src="img/portfolio/01.jpg" alt="Projeto 01">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200" alt="">
+<div class="overlay"><span>Projeto Premium</span></div>
+</div>
 
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DZXDEDyxtqN/">
-<img src="img/portfolio/02.jpg" alt="Projeto 02">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200" alt="">
+<div class="overlay"><span>Insulfilm</span></div>
+</div>
 
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DXVIKV4ERzL/">
-<img src="img/portfolio/03.jpg" alt="Projeto 03">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
-
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DVqvX9zEZgZ/">
-<img src="img/portfolio/04.jpg" alt="Projeto 04">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
-
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DUxzHAVkRe-/">
-<img src="img/portfolio/05.jpg" alt="Projeto 05">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
-
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DPt5tqmkSpR/">
-<img src="img/portfolio/06.jpg" alt="Projeto 06">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
-
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DPrBIDvEXKV/">
-<img src="img/portfolio/07.jpg" alt="Projeto 07">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
-
-<a class="portfolio-item" target="_blank" href="https://www.instagram.com/p/DOYSYVvEXtS/">
-<img src="img/portfolio/08.jpg" alt="Projeto 08">
-<div class="overlay"><span>Ver Projeto</span></div>
-</a>
+<div class="portfolio-item">
+<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1200" alt="">
+<div class="overlay"><span>PPF</span></div>
+</div>
 
 </div>
 
-<div class="instagram">
-<p>Siga nosso Instagram</p>
+<div class="instagram-link">
 <p><strong>@leomourafilm</strong></p>
-<p>
 <a href="https://www.instagram.com/leomourafilm/" target="_blank">
 Ver todos os trabalhos →
 </a>
-</p>
 </div>
 
 </div>
@@ -433,18 +411,12 @@ Ver todos os trabalhos →
 <h2 class="section-title">Nossa Localização</h2>
 
 <div class="endereco">
-<p>
 R. Frei Paulo Maria, 201 - Jardim Magnolia<br>
 Sorocaba - SP | CEP 18044-670
-</p>
 </div>
 
 <div class="mapa">
-
-<iframe
-src="https://maps.google.com/maps?q=R.%20Frei%20Paulo%20Maria,%20201%20-%20Jardim%20Magnolia,%20Sorocaba%20-%20SP,%2018044-670&t=&z=16&ie=UTF8&iwloc=&output=embed">
-</iframe>
-
+<iframe src="https://maps.google.com/maps?q=R.%20Frei%20Paulo%20Maria,%20201%20-%20Jardim%20Magnolia,%20Sorocaba%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
 </div>
 
 </div>
@@ -457,17 +429,9 @@ src="https://maps.google.com/maps?q=R.%20Frei%20Paulo%20Maria,%20201%20-%20Jardi
 
 <h2 class="section-title">Solicite um Orçamento</h2>
 
-<p>
-Atendimento rápido via WhatsApp.
-</p>
-
-<p>
-📱 (15) 99666-0318
-</p>
-
-<p>
-Instagram: @leomourafilm
-</p>
+<p>Atendimento rápido via WhatsApp.</p>
+<p>📱 (15) 99666-0318</p>
+<p>Instagram: @leomourafilm</p>
 
 <br>
 
@@ -480,19 +444,18 @@ Falar com Especialista
 </section>
 
 <footer>
-
 <p>© 2026 Leo Moura Film</p>
 <p>Insulfilm • PPF • Envelopamento</p>
-
 </footer>
 
-<a
-href="https://wa.me/5515996660318"
-target="_blank"
-class="whatsapp"
-title="WhatsApp">
+<a href="https://www.instagram.com/leomourafilm/" target="_blank" class="instagram-float" title="Instagram">
+📸
+</a>
+
+<a href="https://wa.me/5515996660318" target="_blank" class="whatsapp" title="WhatsApp">
 💬
 </a>
 
 </body>
 </html>
+```
