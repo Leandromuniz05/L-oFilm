@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Films | Insulfilm e PPF</title>
+
+<style>
+:root{
+    --preto:#111111;
+    --cinza:#1c1c1c;
+    --dourado:#f5b400;
+    --branco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--preto);
+    color:var(--branco);
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:var(--dourado);
+}
+
+.menu{
+    display:flex;
+    gap:20px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:var(--dourado);
+}
+
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),
+    rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    width:100%;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--dourado);
+    color:#000;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* SERVIÇOS */
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:var(--cinza);
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.card h3{
+    color:var(--dourado);
+    margin-bottom:15px;
+}
+
+/* GALERIA */
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* CONTATO */
+.contato{
+    text-align:center;
+}
+
+.contato p{
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    text-align:center;
+    padding:25px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    color:white;
+    text-decoration:none;
+    padding:15px 18px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+/* RESPONSIVO */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .galeria{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container navbar">
+    <div class="logo">PREMIUM FILMS</div>
+
+    <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</div>
+</header>
+
+<section class="hero" id="inicio">
+<div class="container hero-content">
+    <h1>Insulfilm e PPF Premium</h1>
+
+    <p>
+        Proteção, conforto térmico e acabamento de alto padrão
+        para seu veículo.
+    </p>
+
+    <a href="https://wa.me/5511999999999" class="btn">
+        Solicitar Orçamento
+    </a>
+</div>
+</section>
+
+<section class="section" id="servicos">
+<div class="container">
+    <h2 class="section-title">Nossos Serviços</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Insulfilm Automotivo</h3>
+            <p>
+                Redução de calor, proteção UV e mais privacidade.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>PPF</h3>
+            <p>
+                Película de proteção contra riscos, pedras e desgaste.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Envelopamento</h3>
+            <p>
+                Personalização premium para veículos de todos os tipos.
+            </p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="section" id="galeria">
+<div class="container">
+
+<h2 class="section-title">Galeria</h2>
+
+<div class="galeria">
+
+<img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800" alt="">
+<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800" alt="">
+
+</div>
+
+</div>
+</section>
+
+<section class="section contato" id="contato">
+<div class="container">
+
+<h2 class="section-title">Entre em Contato</h2>
+
+<p>
+Atendimento rápido pelo WhatsApp.
+</p>
+
+<a href="https://wa.me/5511999999999" class="btn">
+Falar com Especialista
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Premium Films - Insulfilm e PPF</p>
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/5511999999999">
+WhatsApp
+</a>
+
+</body>
+</html>
