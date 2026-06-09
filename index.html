@@ -1,302 +1,306 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Leo Moura Film | Insulfilm e PPF Premium em Sorocaba</title>
+<title>Leo Moura Film | Insulfilm e PPF</title>
 
-<meta name="description" content="Especialistas em Insulfilm, PPF e proteção automotiva premium em Sorocaba.">
+<meta name="description"
+content="Especialistas em Insulfilm e PPF em Sorocaba.">
 
 <style>
 
 :root{
---gold:#f5b400;
---black:#0f0f0f;
---dark:#181818;
---white:#ffffff;
---instagram:#E1306C;
---whatsapp:#25D366;
+    --red:#b71c2b;
+    --red-hover:#c62839;
+    --red-light:#d64a58;
+    --black:#0f0f0f;
+    --dark:#181818;
+    --white:#ffffff;
 }
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
-background:var(--black);
-color:var(--white);
-line-height:1.6;
+    font-family:Arial, Helvetica, sans-serif;
+    background:var(--black);
+    color:white;
 }
 
 .container{
-width:90%;
-max-width:1200px;
-margin:auto;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
 }
 
 header{
-background:#000;
-position:sticky;
-top:0;
-z-index:999;
-box-shadow:0 0 15px rgba(0,0,0,.4);
+    background:#000;
+    position:sticky;
+    top:0;
+    z-index:999;
+    border-bottom:2px solid var(--red);
 }
 
 .navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
 }
 
 .logo{
-font-size:1.7rem;
-font-weight:bold;
-color:var(--gold);
+    color:var(--red);
+    font-size:1.7rem;
+    font-weight:bold;
 }
 
 .menu{
-display:flex;
-gap:25px;
+    display:flex;
+    gap:25px;
 }
 
 .menu a{
-text-decoration:none;
-color:white;
-font-weight:600;
-transition:.3s;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
 }
 
 .menu a:hover{
-color:var(--gold);
+    color:var(--red-light);
 }
 
 .hero{
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
-url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600');
-background-size:cover;
-background-position:center;
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(70,0,0,.40)
+    ),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600');
+
+    background-size:cover;
+    background-position:center;
 }
 
 .hero h1{
-font-size:3rem;
-margin-bottom:20px;
+    font-size:3rem;
+    margin-bottom:20px;
 }
 
 .hero p{
-font-size:1.2rem;
-margin-bottom:30px;
-max-width:700px;
-margin-left:auto;
-margin-right:auto;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+    font-size:1.1rem;
 }
 
 .btn{
-display:inline-block;
-background:var(--gold);
-color:#000;
-padding:15px 30px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-transition:.3s;
+    display:inline-block;
+    background:var(--red);
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .btn:hover{
-transform:translateY(-3px);
+    background:var(--red-hover);
+}
+
+.btn-instagram{
+    display:inline-block;
+    margin-top:15px;
+    background:linear-gradient(
+        45deg,
+        #833AB4,
+        #C13584,
+        #E1306C,
+        #F77737
+    );
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 section{
-padding:80px 0;
+    padding:80px 0;
 }
 
 .section-title{
-text-align:center;
-font-size:2.3rem;
-color:var(--gold);
-margin-bottom:50px;
+    text-align:center;
+    color:var(--red);
+    margin-bottom:50px;
+    font-size:2.2rem;
 }
 
 .cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
 }
 
 .card{
-background:var(--dark);
-padding:30px;
-border-radius:15px;
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-5px);
+    background:var(--dark);
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
 }
 
 .card h3{
-color:var(--gold);
-margin-bottom:15px;
+    color:var(--red-light);
+    margin-bottom:15px;
 }
 
 .portfolio{
-background:#121212;
+    background:#141414;
 }
 
 .portfolio-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .portfolio-item{
-position:relative;
-overflow:hidden;
-border-radius:15px;
-height:320px;
+    background:#222;
+    height:280px;
+    border-radius:15px;
+    overflow:hidden;
+    position:relative;
+    text-decoration:none;
 }
 
 .portfolio-item img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.4s;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
 }
 
 .portfolio-item:hover img{
-transform:scale(1.08);
+    transform:scale(1.05);
 }
 
 .overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.6);
-display:flex;
-justify-content:center;
-align-items:center;
-opacity:0;
-transition:.3s;
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.55);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:.3s;
 }
 
 .portfolio-item:hover .overlay{
-opacity:1;
+    opacity:1;
 }
 
 .overlay span{
-padding:12px 20px;
-border:2px solid var(--gold);
-border-radius:8px;
-font-weight:bold;
-}
-
-.instagram-link{
-text-align:center;
-margin-top:30px;
-}
-
-.instagram-link a{
-color:var(--gold);
-font-weight:bold;
-text-decoration:none;
+    border:2px solid var(--red);
+    padding:12px 20px;
+    border-radius:8px;
+    color:white;
 }
 
 .localizacao{
-text-align:center;
+    text-align:center;
 }
 
 .endereco{
-margin-bottom:25px;
-font-size:1.1rem;
+    margin-bottom:30px;
 }
 
 .mapa iframe{
-width:100%;
-height:450px;
-border:none;
-border-radius:15px;
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:15px;
 }
 
 .contato{
-text-align:center;
+    text-align:center;
 }
 
 footer{
-background:#000;
-padding:30px;
-text-align:center;
-}
-
-.whatsapp,
-.instagram-float{
-position:fixed;
-right:20px;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-font-size:30px;
-color:white;
-box-shadow:0 0 15px rgba(0,0,0,.4);
-z-index:9999;
-transition:.3s;
+    background:#000;
+    text-align:center;
+    padding:30px;
 }
 
 .whatsapp{
-bottom:20px;
-background:var(--whatsapp);
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    z-index:9999;
 }
 
 .instagram-float{
-bottom:95px;
-background:var(--instagram);
-}
-
-.whatsapp:hover,
-.instagram-float:hover{
-transform:scale(1.1);
+    position:fixed;
+    right:20px;
+    bottom:95px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    text-decoration:none;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    background:linear-gradient(
+    45deg,
+    #833AB4,
+    #E1306C,
+    #F77737
+    );
+    z-index:9999;
 }
 
 @media(max-width:768px){
 
-.navbar{
-flex-direction:column;
-gap:15px;
-}
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
 
-.menu{
-flex-wrap:wrap;
-justify-content:center;
-}
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
-.hero{
-height:auto;
-padding:100px 0;
-}
+    .hero h1{
+        font-size:2rem;
+    }
 
-.hero h1{
-font-size:2rem;
-}
-
-.cards{
-grid-template-columns:1fr;
-}
-
+    .cards{
+        grid-template-columns:1fr;
+    }
 }
 
 </style>
@@ -321,14 +325,12 @@ grid-template-columns:1fr;
 </header>
 
 <section class="hero" id="inicio">
-
 <div class="container">
 
-<h1>Insulfilm e PPF Premium em Sorocaba</h1>
+<h1>Insulfilm e PPF Premium</h1>
 
 <p>
-Proteção, estética e acabamento de alto padrão para seu veículo.
-Especialistas em Insulfilm, PPF e proteção automotiva premium.
+Proteção, estética e acabamento de alto padrão para seu veículo em Sorocaba.
 </p>
 
 <a href="https://wa.me/5515996660318" target="_blank" class="btn">
@@ -336,7 +338,6 @@ Solicitar Orçamento
 </a>
 
 </div>
-
 </section>
 
 <section id="servicos">
@@ -348,18 +349,18 @@ Solicitar Orçamento
 <div class="cards">
 
 <div class="card">
-<h3>Insulfilm Automotivo</h3>
-<p>Redução de calor, proteção UV, privacidade e conforto térmico.</p>
+<h3>Insulfilm</h3>
+<p>Proteção UV e conforto térmico.</p>
 </div>
 
 <div class="card">
-<h3>PPF - Paint Protection Film</h3>
-<p>Proteção contra riscos, impactos e desgaste da pintura.</p>
+<h3>PPF</h3>
+<p>Proteção contra riscos e impactos.</p>
 </div>
 
 <div class="card">
 <h3>Envelopamento</h3>
-<p>Mudança visual com acabamento premium e alta durabilidade.</p>
+<p>Visual premium e personalizado.</p>
 </div>
 
 </div>
@@ -368,7 +369,7 @@ Solicitar Orçamento
 
 </section>
 
-<section class="portfolio" id="portfolio">
+<section id="portfolio" class="portfolio">
 
 <div class="container">
 
@@ -376,28 +377,13 @@ Solicitar Orçamento
 
 <div class="portfolio-grid">
 
-<div class="portfolio-item">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200" alt="">
-<div class="overlay"><span>Projeto Premium</span></div>
-</div>
+<a class="portfolio-item" href="https://www.instagram.com/p/Cd6ZadIOL0Y/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
+<a class="portfolio-item" href="https://www.instagram.com/p/DZXDEDyxtqN/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
+<a class="portfolio-item" href="https://www.instagram.com/p/DXVIKV4ERzL/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
+<a class="portfolio-item" href="https://www.instagram.com/p/DVqvX9zEZgZ/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
+<a class="portfolio-item" href="https://www.instagram.com/p/DUxzHAVkRe-/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
+<a class="portfolio-item" href="https://www.instagram.com/p/DPt5tqmkSpR/" target="_blank"><div class="overlay"><span>Ver Projeto</span></div></a>
 
-<div class="portfolio-item">
-<img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200" alt="">
-<div class="overlay"><span>Insulfilm</span></div>
-</div>
-
-<div class="portfolio-item">
-<img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?w=1200" alt="">
-<div class="overlay"><span>PPF</span></div>
-</div>
-
-</div>
-
-<div class="instagram-link">
-<p><strong>@leomourafilm</strong></p>
-<a href="https://www.instagram.com/leomourafilm/" target="_blank">
-Ver todos os trabalhos →
-</a>
 </div>
 
 </div>
@@ -408,7 +394,7 @@ Ver todos os trabalhos →
 
 <div class="container localizacao">
 
-<h2 class="section-title">Nossa Localização</h2>
+<h2 class="section-title">Localização</h2>
 
 <div class="endereco">
 R. Frei Paulo Maria, 201 - Jardim Magnolia<br>
@@ -416,7 +402,9 @@ Sorocaba - SP | CEP 18044-670
 </div>
 
 <div class="mapa">
-<iframe src="https://maps.google.com/maps?q=R.%20Frei%20Paulo%20Maria,%20201%20-%20Jardim%20Magnolia,%20Sorocaba%20-%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+
+<iframe src="https://maps.google.com/maps?q=R.%20Frei%20Paulo%20Maria,%20201%20-%20Jardim%20Magnolia,%20Sorocaba%20-%20SP,%2018044-670&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+
 </div>
 
 </div>
@@ -427,16 +415,23 @@ Sorocaba - SP | CEP 18044-670
 
 <div class="container contato">
 
-<h2 class="section-title">Solicite um Orçamento</h2>
+<h2 class="section-title">Contato</h2>
 
-<p>Atendimento rápido via WhatsApp.</p>
-<p>📱 (15) 99666-0318</p>
+<p>WhatsApp: (15) 99666-0318</p>
 <p>Instagram: @leomourafilm</p>
 
 <br>
 
 <a href="https://wa.me/5515996660318" target="_blank" class="btn">
-Falar com Especialista
+Falar no WhatsApp
+</a>
+
+<br><br>
+
+<a href="https://www.instagram.com/leomourafilm/"
+target="_blank"
+class="btn-instagram">
+📸 Ver Trabalhos no Instagram
 </a>
 
 </div>
@@ -445,17 +440,19 @@ Falar com Especialista
 
 <footer>
 <p>© 2026 Leo Moura Film</p>
-<p>Insulfilm • PPF • Envelopamento</p>
 </footer>
 
-<a href="https://www.instagram.com/leomourafilm/" target="_blank" class="instagram-float" title="Instagram">
-📸
+<a href="https://wa.me/5515996660318"
+class="whatsapp"
+target="_blank">
+💬
 </a>
 
-<a href="https://wa.me/5515996660318" target="_blank" class="whatsapp" title="WhatsApp">
-💬
+<a href="https://www.instagram.com/leomourafilm/"
+class="instagram-float"
+target="_blank">
+📸
 </a>
 
 </body>
 </html>
-```
